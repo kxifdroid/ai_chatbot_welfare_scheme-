@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Indian Government Welfare Scheme",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string", "description": "URL-friendly slug for the scheme" },
+    "name_en": { "type": "string" },
+    "name_hi": { "type": "string" },
+    "name_bn": { "type": "string" },
+    "name_ta": { "type": "string" },
+    "name_mr": { "type": "string" },
+    "summary_en": { 
+      "type": "string", 
+      "description": "2-sentence plain-language summary in English" 
+    },
+    "eligibility": {
+      "type": "object",
+      "properties": {
+        "occupation": { 
+          "type": "string", 
+          "enum": ["farmer", "labourer", "homemaker", "gig-worker", "any"] 
+        },
+        "gender": { 
+          "type": "string", 
+          "enum": ["male", "female", "any"] 
+        },
+        "land_ownership": { 
+          "type": "string", 
+          "enum": ["yes", "no", "any"] 
+        },
+        "max_income_lakh": { "type": ["number", "null"] },
+        "has_girl_child": { "type": ["boolean", "null"] },
+        "is_pregnant": { "type": ["boolean", "null"] },
+        "bpl_card": { "type": ["boolean", "null"] }
+      },
+      "required": ["occupation", "gender", "land_ownership", "max_income_lakh", "has_girl_child", "is_pregnant", "bpl_card"]
+    },
+    "documents": { "type": "array", "items": { "type": "string" } },
+    "documents_hi": { "type": "array", "items": { "type": "string" } },
+    "documents_bn": { "type": "array", "items": { "type": "string" } },
+    "apply_url": { "type": "string", "format": "uri" },
+    "helpline_number": { "type": "string" }
+  },
+  "required": ["id", "name_en", "name_hi", "name_bn", "name_ta", "name_mr", "summary_en", "eligibility", "documents", "documents_hi", "documents_bn", "apply_url", "helpline_number"]
+}

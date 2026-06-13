@@ -1,0 +1,35 @@
+{
+    "id": "pm-kisan",
+    "name_en": "Pradhan Mantri Kisan Samman Nidhi",
+    "name_hi": "प्रधानमंत्री किसान सम्मान निधि",
+    "name_bn": "প্রধানমন্ত্রী কিষাণ সম্মান নিধি",
+    "name_ta": "பிரதம மந்திரி கிசான் சம்மான் நிதி",
+    "name_mr": "प्रधानमंत्री किसान सन्मान निधी",
+    "summary_en": "This scheme provides income support to all landholding farmers' families across the country to help them with agricultural expenses. Eligible families receive 6,000 rupees every year, which is paid directly into their bank accounts in three equal installments.",
+    "eligibility": {
+        "occupation": "farmer",
+        "gender": "any",
+        "land_ownership": "yes",
+        "max_income_lakh": null,
+        "has_girl_child": null,
+        "is_pregnant": null,
+        "bpl_card": null
+    },
+    "documents": [
+        "Aadhar Card",
+        "Landholding papers",
+        "Bank account details"
+    ],
+    "documents_hi": [
+        "आधार कार्ड",
+        "भूमि स्वामित्व के दस्तावेज",
+        "बैंक खाते का विवरण"
+    ],
+    "documents_bn": [
+        "আধার কার্ড",
+        "জমির মালিকানার নথি",
+        "ব্যাঙ্ক অ্যাকাউন্টের বিবরণ"
+    ],
+    "apply_url": "https://pmkisan.gov.in/",
+    "helpline_number": "155261 / 1800115526"
+}
